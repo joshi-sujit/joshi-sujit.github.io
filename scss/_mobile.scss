@@ -1,0 +1,16 @@
+//Widescreens
+@include mediaXl {
+}
+
+@include mediaLg {
+}
+
+// Tablest & small Laptops
+@include mediaMd {
+}
+
+@include mediaSm {
+  body {
+    background-color: $dark-grey;
+  }
+}

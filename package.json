@@ -1,0 +1,27 @@
+{
+  "name": "joshi-sujit-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio Sujit Joshi",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshi-sujit/joshi-sujit.github.io.git"
+  },
+  "keywords": [
+    "Sujit",
+    "Joshi",
+    "Developer"
+  ],
+  "author": "Sujit Joshi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshi-sujit/joshi-sujit.github.io/issues"
+  },
+  "homepage": "https://github.com/joshi-sujit/joshi-sujit.github.io#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

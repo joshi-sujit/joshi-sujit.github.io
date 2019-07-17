@@ -1,0 +1,35 @@
+/*Primary Color Setup*/
+$heading-color: #253c78;
+$bck-color: #ffffff;
+$green: #3c6e71;
+$dark-grey: #353535;
+
+//Media Query Mixins
+$small-ish: 500px;
+$small-medium-ish: 768px;
+$medium-ish: 1170px;
+$large-ish: 1179px;
+
+@mixin mediaSm {
+  @media screen and (max-width: $small-ish) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: $small-medium-ish) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: $small-medium-ish+1) and (max-width: $medium-ish) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: $large-ish) {
+    @content;
+  }
+}
