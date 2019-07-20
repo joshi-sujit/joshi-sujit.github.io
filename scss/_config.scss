@@ -1,14 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Arvo&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+
 /*Primary Color Setup*/
 $heading-color: #253c78;
 $bck-color: #ffffff;
 $green: #3c6e71;
 $dark-grey: #353535;
+$font-family: "B612", sans-serif;
 
 //Media Query Mixins
 $small-ish: 500px;
 $small-medium-ish: 768px;
 $medium-ish: 1170px;
 $large-ish: 1179px;
+
+@mixin demo-typography() {
+  font-family: "arvo", serif;
+}
+
+@mixin heading-typography() {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+}
 
 @mixin mediaSm {
   @media screen and (max-width: $small-ish) {

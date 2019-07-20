@@ -3,9 +3,183 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/main.css" />
 
     <title>Sujit Joshi - Web Portfolio</title>
   </head>
-  <body></body>
+  <body>
+    <header id="home">
+      <div class="menu">
+        <span class="bar"></span>
+      </div>
+
+      <nav class="nav">
+        <div class="overlay">
+          <ul>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About me</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#career" class="nav-link">Career Graph</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="landing-text">
+        <h1>Sujit Joshi</h1>
+        <h5>Web Developer</h5>
+
+        <div class="social-links">
+          <i class="fa fa-linkedin"></i>
+          <i class="fa fa-github"></i>
+        </div>
+      </div>
+    </header>
+    <!--END HEADER-->
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="profile-img">
+          <img src="img/profile.jpg" alt="profile" />
+        </div>
+        <div class="about-details">
+          <div class="about-heading">
+            <h1>About</h1>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo error
+            numquam culpa, ratione voluptate modi commodi, cupiditate, autem
+            libero expedita minima molestiae unde necessitatibus consectetur
+            dolor eius dolorum dicta aliquid?
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--END ABOUT ME-->
+
+    <section class="projects">
+      <div class="container">
+        <div class="section-heading">
+          <h1 class="main-heading">Projects</h1>
+          <h6 class="sub-heading">Somethings I've done Over the past</h6>
+        </div>
+
+        <div class="project-item">
+          <div class="project-img"><img src="img/profile.jpg" alt="" /></div>
+          <div class="project-description">
+            <h6>Web Development</h6>
+            <h1>Blog Website</h1>
+            <h6>Technology Stack</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              error numquam culpa, ratione voluptate modi commodi, cupiditate,
+              autem libero expedita minima molestiae unde necessitatibus
+              consectetur dolor eius dolorum dicta aliquid?
+            </p>
+          </div>
+        </div>
+        <!--End Project Item-->
+
+        <div class="project-item">
+          <div class="project-img"><img src="img/profile.jpg" alt="" /></div>
+          <div class="project-description">
+            <h1>Project Title</h1>
+            <h6>Web Development</h6>
+            <h6>Technology Stack</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              error numquam culpa, ratione voluptate modi commodi, cupiditate,
+              autem libero expedita minima molestiae unde necessitatibus
+              consectetur dolor eius dolorum dicta aliquid?
+            </p>
+          </div>
+        </div>
+        <!--End Project Item-->
+
+        <div class="project-item">
+          <div class="project-img"><img src="img/profile.jpg" alt="" /></div>
+          <div class="project-description">
+            <h1>Project Title</h1>
+            <h6>Site Development</h6>
+            <h6>Technology Stack</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              error numquam culpa, ratione voluptate modi commodi, cupiditate,
+              autem libero expedita minima molestiae unde necessitatibus
+              consectetur dolor eius dolorum dicta aliquid?
+            </p>
+          </div>
+        </div>
+        <!--End Project Item-->
+
+        <div class="project-item">
+          <div class="project-img"><img src="img/profile.jpg" alt="" /></div>
+          <div class="project-description">
+            <h1>Project Title</h1>
+            <h6>Web Development</h6>
+
+            <h6>Technology Stack</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              error numquam culpa, ratione voluptate modi commodi, cupiditate,
+              autem libero expedita minima molestiae unde necessitatibus
+              consectetur dolor eius dolorum dicta aliquid?
+            </p>
+          </div>
+        </div>
+        <!--End Project Item-->
+      </div>
+    </section>
+    <!--END PROJECTS-->
+
+    <section id="career" class="career">
+      <div class="container">
+        <div class="section-heading">
+          <h1 class="main-heading">Timeline</h1>
+          <h6 class="sub-heading">A bit of career graph</h6>
+        </div>
+
+        <div class="timeline">
+          <ul>
+            <li class="date" data-date="2017 - Present">
+              <h1>Arisit Pty Ltd.</h1>
+              <h6>ROle</h6>
+              <p>
+                orem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                error numquam culpa, ratione voluptate modi commodi, cupiditate,
+                autem libero expedita minima molestiae unde
+              </p>
+            </li>
+
+            <li class="date" data-date="2014 - 2015">
+              <h1>Sunbi Design.</h1>
+              <h6>ROle</h6>
+              <p>
+                orem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                error numquam culpa, ratione voluptate modi commodi, cupiditate,
+                autem libero expedita minima molestiae unde
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--END CAREER-->
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-heading">
+          <h1 class="main-heading">Contact</h1>
+          <h6 class="sub-heading">Let's work together</h6>
+        </div>
+      </div>
+    </section>
+    <!--END FOOTER-->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

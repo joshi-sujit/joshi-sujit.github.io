@@ -2,8 +2,33 @@
 
 @import "config";
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
 body {
   background-color: $bck-color;
+}
+
+h1 {
+  @include heading-typography();
+  font-size: 7rem;
+}
+
+h5 {
+  @include heading-typography();
+  font-size: 3rem;
 }
 
 @import "mobile";
