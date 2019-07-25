@@ -16,16 +16,131 @@ html {
 body {
   background-color: #ffffff; }
 
+section {
+  padding: 6rem 0; }
+
+p {
+  line-height: 1.5;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #353535;
+  font-family: "arvo", serif; }
+
+a {
+  text-decoration: none;
+  font-family: "arvo", serif; }
+
 h1 {
   font-family: "Oswald", sans-serif;
   font-weight: bold;
+  color: #253c78;
   font-size: 7rem; }
 
 h5 {
   font-family: "Oswald", sans-serif;
   font-weight: bold;
+  color: #253c78;
   font-size: 3rem; }
 
-@media screen and (max-width: 500px) {
-  body {
-    background-color: #353535; } }
+/*Header*/
+header#home {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to top, #f7f4f4, transparent), url("../img/background-image.jpg") bottom no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative; }
+
+.landing-text {
+  margin: auto;
+  user-select: none; }
+  .landing-text h5 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-right: 5px;
+    line-height: 1;
+    color: #3c6e71;
+    position: relative; }
+    .landing-text h5::before, .landing-text h5::after {
+      content: "";
+      width: 5rem;
+      height: 10px;
+      top: 50%;
+      position: absolute;
+      transform: translateY(-50%);
+      border-radius: 8px;
+      background-color: #3c6e71; }
+    .landing-text h5::before {
+      left: -6rem; }
+    .landing-text h5::after {
+      right: -6rem; }
+
+.menu {
+  padding: 2rem 2.5rem;
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+  z-index: 9999;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .menu .bar, .menu .bar::after, .menu .bar::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 4rem;
+    background-color: white;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    transition: 650ms ease-in-out; }
+  .menu .bar::before {
+    top: -2rem; }
+  .menu .bar::after {
+    top: 2rem; }
+  .menu.active .bar {
+    background-color: transparent; }
+    .menu.active .bar::before {
+      transform: rotate(45deg); }
+    .menu.active .bar::after {
+      transform: rotate(-45deg); }
+    .menu.active .bar::before, .menu.active .bar::after {
+      top: 0; }
+
+.nav {
+  width: 100%;
+  height: 6rem;
+  line-height: 6rem;
+  position: relative; }
+  .nav .overlay ul {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .nav .overlay ul li {
+      text-transform: uppercase; }
+      .nav .overlay ul li a {
+        display: block;
+        font-size: 2rem;
+        transition: 650ms ease-in-out; }
+        .nav .overlay ul li a:hover, .nav .overlay ul li a.active:hover {
+          color: #3c6e71;
+          border-bottom-color: #3c6e71; }
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  transform: scale(0);
+  transition: 650ms ease-in-out; }
+  .overlay.menu-open {
+    transform: scale(1);
+    opacity: 1; }

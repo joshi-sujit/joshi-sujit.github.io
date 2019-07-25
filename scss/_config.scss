@@ -21,6 +21,11 @@ $large-ish: 1179px;
 @mixin heading-typography() {
   font-family: "Oswald", sans-serif;
   font-weight: bold;
+  color: $heading-color;
+}
+
+@mixin custom-transition() {
+  transition: 650ms ease-in-out;
 }
 
 @mixin mediaSm {

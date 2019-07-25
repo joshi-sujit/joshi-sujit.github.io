@@ -21,6 +21,23 @@ body {
   background-color: $bck-color;
 }
 
+section {
+  padding: 6rem 0;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: $dark-grey;
+  @include demo-typography();
+}
+
+a {
+  text-decoration: none;
+  @include demo-typography();
+}
+
 h1 {
   @include heading-typography();
   font-size: 7rem;
@@ -31,4 +48,52 @@ h5 {
   font-size: 3rem;
 }
 
+/*Header*/
+header#home {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to top, rgb(247, 244, 244), transparent),
+    url("../img/background-image.jpg") bottom no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+.landing-text {
+  margin: auto;
+  user-select: none;
+
+  h5 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-right: 5px;
+    line-height: 1;
+    color: $green;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 5rem;
+      height: 10px;
+      top: 50%;
+      position: absolute;
+      transform: translateY(-50%);
+      border-radius: 8px;
+      background-color: $green;
+    }
+
+    &::before {
+      left: -6rem;
+    }
+
+    &::after {
+      right: -6rem;
+    }
+  }
+}
+
+@import "navigation";
 @import "mobile";
