@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="https://kit.fontawesome.com/16f141d29a.js"></script>
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -23,7 +24,7 @@
             <li><a href="#about" class="nav-link">About me</a></li>
             <li><a href="#projects" class="nav-link">Projects</a></li>
             <li><a href="#career" class="nav-link">Career Graph</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="#contact" class="nav-link">Get in Touch</a></li>
           </ul>
         </div>
       </nav>
@@ -42,25 +43,30 @@
 
     <section class="about" id="about">
       <div class="container">
-        <div class="profile-img">
-          <img src="img/profile.jpg" alt="profile" />
+        <div class="section-heading">
+          <h1 class="main-heading">About me</h1>
         </div>
+
         <div class="about-details">
-          <div class="about-heading">
-            <h1>About</h1>
+          <div class="profile-img">
+            <img
+              src="img/profile.jpg"
+              alt="profile"
+              height="200px"
+              width="200px"
+            />
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo error
-            numquam culpa, ratione voluptate modi commodi, cupiditate, autem
-            libero expedita minima molestiae unde necessitatibus consectetur
-            dolor eius dolorum dicta aliquid?
+            I'm a web developer with a bit of interest on Cars. And this is my
+            first portfolio to showcase my project. I'm slowly trasitioning from
+            backend to frontend development. Hope you like it. :)
           </p>
         </div>
       </div>
     </section>
     <!--END ABOUT ME-->
 
-    <section class="projects">
+    <section class="projects" id="projects">
       <div class="container">
         <div class="section-heading">
           <h1 class="main-heading">Projects</h1>
@@ -68,11 +74,12 @@
         </div>
 
         <div class="project-item">
-          <div class="project-img"><img src="img/profile.jpg" alt="" /></div>
+          <div class="project-img has-margin-right">
+            <img src="img/profile.jpg" alt="" />
+          </div>
           <div class="project-description">
-            <h6>Web Development</h6>
             <h1>Blog Website</h1>
-            <h6>Technology Stack</h6>
+            <h6>WordPress</h6>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
               error numquam culpa, ratione voluptate modi commodi, cupiditate,
@@ -84,11 +91,29 @@
         <!--End Project Item-->
 
         <div class="project-item">
-          <div class="project-img"><img src="img/profile.jpg" alt="" /></div>
-          <div class="project-description">
-            <h1>Project Title</h1>
-            <h6>Web Development</h6>
-            <h6>Technology Stack</h6>
+          <div class="project-description has-margin-right">
+            <h1>Blog Website</h1>
+            <h6>Laravel, MySQL</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              error numquam culpa, ratione voluptate modi commodi, cupiditate,
+              autem libero expedita minima molestiae unde necessitatibus
+              consectetur dolor eius dolorum dicta aliquid?
+            </p>
+          </div>
+          <div class="project-img">
+            <img src="img/profile.jpg" alt="" />
+          </div>
+        </div>
+        <!--End Project Item-->
+
+        <div class="project-item">
+          <div class="project-img has-margin-right">
+            <img src="img/profile.jpg" alt="" />
+          </div>
+          <div class="project-description ">
+            <h1>Blog Website</h1>
+            <h6>CodeIgniter, MySQL, Apache</h6>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
               error numquam culpa, ratione voluptate modi commodi, cupiditate,
@@ -100,10 +125,9 @@
         <!--End Project Item-->
 
         <div class="project-item">
-          <div class="project-img"><img src="img/profile.jpg" alt="" /></div>
-          <div class="project-description">
-            <h1>Project Title</h1>
-            <h6>Site Development</h6>
+          <div class="project-description has-margin-right">
+            <h1>Blog Website</h1>
+            <h2>Web Development</h2>
             <h6>Technology Stack</h6>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
@@ -112,22 +136,8 @@
               consectetur dolor eius dolorum dicta aliquid?
             </p>
           </div>
-        </div>
-        <!--End Project Item-->
-
-        <div class="project-item">
-          <div class="project-img"><img src="img/profile.jpg" alt="" /></div>
-          <div class="project-description">
-            <h1>Project Title</h1>
-            <h6>Web Development</h6>
-
-            <h6>Technology Stack</h6>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-              error numquam culpa, ratione voluptate modi commodi, cupiditate,
-              autem libero expedita minima molestiae unde necessitatibus
-              consectetur dolor eius dolorum dicta aliquid?
-            </p>
+          <div class="project-img ">
+            <img src="img/profile.jpg" alt="" />
           </div>
         </div>
         <!--End Project Item-->
@@ -174,6 +184,10 @@
         <div class="section-heading">
           <h1 class="main-heading">Contact</h1>
           <h6 class="sub-heading">Let's work together</h6>
+        </div>
+        <div class="contact-details">
+          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="#" targe="_blank"><i class="fab fa-github"></i></a>
         </div>
       </div>
     </section>
